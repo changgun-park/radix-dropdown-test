@@ -8,7 +8,7 @@ export function ControlledDropdown() {
   const [open, setOpen] = useState(false);
 
   return (
-    <DropdownMenu.Root open={open}>
+    <DropdownMenu.Root open={open} onOpenChange={(open) => setOpen(open)}>
       <DropdownMenu.Trigger onClick={() => setOpen(true)}>
         Trigger
       </DropdownMenu.Trigger>
